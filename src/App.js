@@ -18,7 +18,7 @@ const App = () => {
   const calculateResult = () => {
     const input = text.join("") // remove commas
     const final = evaluate(input);
-    const ans = final.toString();
+    const ans = final.toString(); // stores answer as string to pass back into setText()
     setResult(final);
     setText(ans);
   }
