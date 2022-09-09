@@ -1,9 +1,9 @@
 import "./Button.css";
 
-const Button = () => {
+const Button = ({ symbol }) => {
     return (
         <div className="button-wrapper">
-            1
+            {symbol}
         </div>
     );
 };
