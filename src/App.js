@@ -3,7 +3,9 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      <h1>Heading</h1>
+      <div className='calc-wrapper'>
+        <h1>Heading</h1>
+      </div>
     </div>
   );
 }
