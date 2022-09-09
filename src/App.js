@@ -13,6 +13,11 @@ const App = () => {
     setText((text) => [...text, val + " "])
   }
 
+  const resetInput = () => {
+    setText("");
+    setResult("");
+  }
+
   const buttonColor = "#f2a33c";
 
   return (
@@ -43,7 +48,7 @@ const App = () => {
           <Button symbol="=" />
           <Button symbol="-" color={buttonColor} handleClick={addToText} />
         </div>
-        <Button symbol="Clear" color="#2b2b2b"/>
+        <Button symbol="Clear" color="#2b2b2b" handleClick={resetInput} />
       </div>
     </div>
   );
