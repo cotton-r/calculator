@@ -9,6 +9,10 @@ const App = () => {
   const [text, setText] = useState("");
   const [result, setResult] = useState("");
 
+  const addToText = (val) => {
+    setText((text) => [...text, val + " "])
+  }
+
   const buttonColor = "#f2a33c";
 
   return (
@@ -16,7 +20,7 @@ const App = () => {
       <div className='calc-wrapper'>
         <Input text={text} result={result} />
         <div className='row'>
-          <Button symbol="7" />
+          <Button symbol="7" handleClick={addToText} />
           <Button symbol="8" />
           <Button symbol="9" />
           <Button symbol="/" color={buttonColor} />
