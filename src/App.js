@@ -34,7 +34,7 @@ const App = () => {
           <Button symbol="=" />
           <Button symbol="-" color={buttonColor} />
         </div>
-        <Button symbol="Clear" color="red" />
+        <Button symbol="Clear" color="#2b2b2b"/>
       </div>
     </div>
   );
